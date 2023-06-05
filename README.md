@@ -2,7 +2,7 @@
 
 This project is s software that enables users to digitally sign PDF files online. This open-source project utilizes various tools and libraries available on GitHub, such as vue-drag-resize, to provide a seamless user experience for positioning the signature within the PDF document.
 
-The main functionality of VueSignPDF is to allow users to upload PDF files and apply their digital signatures. To achieve this, the project incorporates a web service created in PHP, leveraging the power of jPDFSign-PHP library for digitally signing the uploaded files.
+The main functionality of vuepdfsign is to allow users to upload PDF files and apply their digital signatures. To achieve this, the project incorporates a web service created in PHP, leveraging the power of jPDFSign-PHP library for digitally signing the uploaded files.
 
 Key Features:
 
