@@ -5,10 +5,10 @@ The main functionality of VueSignPDF is to allow users to upload PDF files and a
 
 Key Features:
 
-PDF File Upload: Users can upload their PDF documents to the application for digital signing.
-Drag and Resize Signature: The integrated vue-drag-resize library allows users to easily position and resize their digital signature within the PDF.
-Digital Signature Application: The software applies digital signatures to the uploaded PDF files using the jPDFSign-PHP library.
-User-friendly Interface: Vue.js provides a responsive and intuitive interface, making it easy for users to navigate and interact with the application and download their signed PDF files.
+- PDF File Upload: Users can upload their PDF documents to the application for digital signing.
+- Drag and Resize Signature: The integrated vue-drag-resize library allows users to easily position and resize their digital signature within the PDF.
+- Digital Signature Application: The software applies digital signatures to the uploaded PDF files using the jPDFSign-PHP library.
+- User-friendly Interface: Vue.js provides a responsive and intuitive interface, making it easy for users to navigate and interact with the application and download their signed PDF files.
     
 ## Project setup
 ```
