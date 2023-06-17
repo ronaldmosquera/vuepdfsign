@@ -1,7 +1,6 @@
 <template>
   <v-app>
     <visor-pdf v-if="true"></visor-pdf>
-    <!-- <div class="list" id="list"></div> -->
   </v-app>
 </template>
 <style scoped>
@@ -27,8 +26,6 @@
 }
 </style>
 <script>
-//import HelloWorld from "./components/HelloWorld.vue";
-//import DragResize from "vue-drag-resize";
 import visorPdf from "./components/visor-pdf.vue";
 const emptyElement = () => {
   return {
@@ -56,7 +53,6 @@ const emptySignerData = () => ({
 export default {
   name: "App",
   components: {
-    //DragResize,
     visorPdf,
   },
 
@@ -90,11 +86,7 @@ export default {
     },
   },
 
-  mounted() {
-    //let listEl = document.getElementById("list");
-    //this.listWidth = listEl.clientWidth;
-    //this.listHeight = listEl.clientHeight;
-  },
+  mounted() {},
 };
 </script>
 

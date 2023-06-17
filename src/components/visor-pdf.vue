@@ -130,8 +130,6 @@ a
         </v-card>
       </v-col>
     </v-row>
-    <!-- <toolbar></toolbar> -->
-    <!-- <router-view /> -->
   </div>
 </template>
 
@@ -236,7 +234,7 @@ export default {
       axis: "both",
       minw: 25,
       minh: 25,
-      firmante: "RONALD ANDRES MOSQUERA VAREA",
+      firmante: "NOMBRE FIRMANTE",
     };
   },
   computed: {
@@ -300,7 +298,6 @@ export default {
 
         var renderTask = page.render(renderContext);
         renderTask.promise.then(() => {
-          //console.log("Page rendered");
           this.pageRendering = false;
           if (this.pageNumPending != null) {
             this.getPage(this.pageNumPending);
@@ -318,8 +315,8 @@ export default {
 
       loadingTask.promise.then(
         (pdf) => {
-          console.log(this.currentPage);
-          console.log(pdf.numPages);
+          //console.log(this.currentPage);
+          //console.log(pdf.numPages);
           this.totalPages = pdf.numPages;
           pdfDoc = pdf;
           this.getPage(1);
@@ -383,13 +380,10 @@ export default {
     getObjectURL(file) {
       let url = null;
       if (window.createObjectURL != undefined) {
-        // basic
         url = window.createObjectURL(file);
       } else if (window.webkitURL != undefined) {
-        // webkit or chrome
         url = window.webkitURL.createObjectURL(file);
       } else if (window.URL != undefined) {
-        // mozilla(firefox)
         url = window.URL.createObjectURL(file);
       }
       return url;
@@ -455,7 +449,7 @@ export default {
           url + "/firmarArchivoPdf",
           {
             user: "ronaldmosquera@yahoo.com",
-            archivo: this.archivoUrl, //"Cotización COT17175-12.pdf",
+            archivo: this.archivoUrl,
             rutaArchivo: "/tmp/",
             //firmas: `[{"pg":"1","V":"true","fs":"7","llx":"360","lly":"540","urx":"520","ury":"640"},{"pg":"2","V":"true","fs":"8","llx":"360","lly":"540","urx":"520","ury":"640"}]`,
             //firmas: `[{"pg":"1","V":"true","fs":"7","llx":"1","lly":"0","urx":"120","ury":"30"}]`,
